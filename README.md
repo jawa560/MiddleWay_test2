@@ -137,5 +137,5 @@ public class ResultException : Exception
 另外一個優點，每個Middleway在執行上可以發揮多執行緒的優勢。
 
 # 本範例
-在這支程式中，我們模擬了三個中介層，來觀察上下層程式執行的先後關係。並在第三層中，拋出了一個異常，再catch它，看看會不會炸掉pipe-line。實驗結果，如果有 catch，則會被攔截。若無，則整支程式會終止。
+在這支程式中，我們模擬了三個中介層，來觀察上下層程式執行的先後關係(請看Console畫面)。並在第三層中，拋出了一個異常，再catch它，看看會不會炸掉pipe-line。實驗結果，如果有 catch，則會被攔截。若無，則整支程式會終止。
 ![2](images/console.png)
